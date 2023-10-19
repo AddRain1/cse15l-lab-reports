@@ -2,7 +2,7 @@
 ![what](https://raw.githubusercontent.com/AddRain1/cse15l-lab-reports/main/Screenshot%202023-10-19%20001258.png)
 The command cd changes the directory, but with no arguments, cd sets the working directory to /home environment. This output is not an error.
 ![what](cd2.png)
-By changing the directory to lecture1, the working directory now becomes lecture1. This output is not an error. 
+<br>By changing the directory to lecture1, the working directory now becomes lecture1. This output is not an error. 
 ![image](cd3.png)
 <br>Changing the directory to a txt file will not work because it is not a directory, but a file. This output is an error because the working directory cannot be a file. 
 <br>![image](cat1.png)
