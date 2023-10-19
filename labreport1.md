@@ -3,7 +3,7 @@
 The command cd changes the directory, but with no arguments, cd sets the working directory to /home environment. This output is not an error.
 ![what](cd2.png)
 <br>By changing the directory to lecture1, the working directory now becomes lecture1. This output is not an error. 
-<be>![image](cd3.png)
+<br>![image](cd3.png)
 <br>Changing the directory to a txt file will not work because it is not a directory, but a file. This output is an error because the working directory cannot be a file. 
 <br>![image](cat1.png)
 <br>The command cat essentially prints the contents of a file, so without an argument, there is nothing to be printed. If I type something after and hit enter, the same text I just typed will be repeated. This output is not an error.
