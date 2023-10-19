@@ -1,5 +1,5 @@
 # **Lab Report 1**
-![what](image1.png)
+![what](https://raw.githubusercontent.com/AddRain1/cse15l-lab-reports/main/Screenshot%202023-10-19%20001258.png)
 The command cd changes the directory, but with no arguments, the working directory remains the same, /home. This output is not an error.
 ![what](image4.png)
 By changing the directory to lecture1, the working directory now becomes lecture1. This output is not an error. 
