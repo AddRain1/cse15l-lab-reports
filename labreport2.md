@@ -9,6 +9,6 @@ Similar to the first example, handleRequest is the only method called. This meth
 ![ssh](ssh.png)
 ![privatekey](privatekey.png)
 ![publickey](sshpublickey.png)
-I had trouble logging into my account on ieng6, so I used edstem instead.
+<br> I had trouble logging into my account on ieng6, so I used edstem instead.
 ## Part 3
 Something I learned in week 2 was how to set up and run a web server. By running two commands, I can start running a web server that can be updated through inputs by a user. If a user changes the path, the server can be updated in various ways. A server might be too full if its port has too many users, so I can change that as well to whatever number I wish. Although the tools I have learned are simple, I find them very interesting because this is something I didn't know how to do before.
