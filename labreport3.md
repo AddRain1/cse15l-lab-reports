@@ -39,5 +39,6 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-This fixes the issue because 
+This fixes the issue because the output is an array that is reversed instead of an array that contains one value repeatedly. First, only iterating through half of the array stops the array from becoming reversed again. By introducing a temp variable, the value of an element at a specific index can be saved and given to another element. 
+## Part 2
 
