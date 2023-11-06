@@ -42,7 +42,7 @@ static void reverseInPlace(int[] arr) {
 This fixes the issue because the output is an array that is reversed instead of an array that contains one value repeatedly. First, only iterating through half of the array stops the array from becoming reversed again. By introducing a temp variable, the value of an element at a specific index can be saved and given to another element. 
 ## Part 2
 I choose the find command.
-Option 1: -type
+### <br>Option 1: -type
 ```
 $ find technical -type d
 technical
@@ -1104,7 +1104,7 @@ technical/plos/pmed.0020281.txt
 ```
 "-type f" searches through the technical directory for all file types. This is useful for locating files that meet specific criteria.
 I found out about this option through this website, https://www.redhat.com/sysadmin/linux-find-command.
-Option 2: -empty
+### <br> Option 2: -empty
 ```
 $ find technical -type d -empty
 ```
@@ -1115,7 +1115,7 @@ $ find technical -type f -empty
 Although similar to the case above, empty files are searched for instead of empty directories. This is useful for finding empty files.
 I found out about this option through ChatGPT. I inputted "find command-line options" and one of the options it presented was -empty.
 ![lr3chatgpt](lr3chatgpt.png)
-Option 3: -maxdepth
+### <br> Option 3: -maxdepth
 ```
 $ find technical -maxdepth 1 -type d
 technical
@@ -1138,7 +1138,7 @@ technical/government/Gen_Account_Office
 ```
 In this example, maxdepth is set to 2 instead, so -find looks through 2 levels below technical, which lists out every directory below the directory 'government.'
 I found this on the website https://www.redhat.com/sysadmin/linux-find-command.
-Option 4: -delete
+### Option 4: -delete
 ```
 $ find technical -type f -name "chapter-2.txt*" -delete
 ```
@@ -1148,5 +1148,6 @@ $ find technical -type d -name -empty -delete
 ```
 In this example, -delete looks for empty directories within technical and deletes them. 
 I found this command on ChatGpt. I searched for "find command-line options" and found the command as one of the results.
+<br> ![lr3chatgpt2](lr3chatgpt2.png)
 
 
