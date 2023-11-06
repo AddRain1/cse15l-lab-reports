@@ -1113,5 +1113,40 @@ $ find technical -type d -empty
 $ find technical -type f -empty
 ```
 Although similar to the case above, empty files are searched for instead of empty directories. This is useful for finding empty files.
-I found out about this option through ChatGPT. I inputted "find command-line options" and one of the options it presented was 
+I found out about this option through ChatGPT. I inputted "find command-line options" and one of the options it presented was -empty.
+![lr3chatgpt](lr3chatgpt.png)
+Option 3: -maxdepth
+```
+$ find technical -maxdepth 1 -type d
+technical
+technical/911report
+technical/biomed
+technical/government
+technical/plos
+```
+-maxdepth limits the depth of the directory tree that -find can search through, so -maxdepth 1 only looks at one level of subdirectory below technical. It's useful for specifying how many levels of subdirectories below the starting directory you want to explore. 
+```
+$ find technical -maxdepth 2 -type d
+technical
+technical/911report
+technical/biomed
+technical/government
+technical/government/About_LSC
+technical/government/Alcohol_Problems
+technical/government/Env_Prot_Agen
+technical/government/Gen_Account_Office
+```
+In this example, maxdepth is set to 2 instead, so -find looks through 2 levels below technical, which lists out every directory below the directory 'government.'
+I found this on the website https://www.redhat.com/sysadmin/linux-find-command.
+Option 4: -delete
+```
+$ find technical -type f -name "chapter-2.txt*" -delete
+```
+-delete permanently deletes files or directories, and in this case a file named "chapter-2.txt" got deleted. This is useful for getting rid of unwanted files or directories.
+```
+$ find technical -type d -name -empty -delete
+```
+In this example, -delete looks for empty directories within technical and deletes them. 
+I found this command on ChatGpt. I searched for "find command-line options" and found the command as one of the results.
+
 
