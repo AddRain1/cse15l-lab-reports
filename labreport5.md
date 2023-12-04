@@ -13,8 +13,11 @@ Hi! Since the error produced is caused by an index out of bounds, the count of y
 By removing the equal sign, the while loops iterated one less time and the index did not go out of bounds. Thanks!
 
 ### Setup
+![four](lr5.4.png)
 The correct files and directories can all be accessed by git cloning this URL: git@github.com:AddRain1/lab7.git.
-ListExamples.java
+
+### Content of each file before fix
+**ListExamples.java**
 ```
 import java.util.ArrayList;
 import java.util.List;
@@ -67,7 +70,7 @@ class ListExamples {
 
 }
 ```
-ListExamples.java
+**ListExamplesTest.java**
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -92,13 +95,14 @@ public class ListExamplesTests {
 
 }
 ```
-test.sh
+**test.sh**
 ```
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 ```
-To trigger the bug, I ran "bash test.sh"
-To fix the bug, remove the equal sign in the last two while loops.
+
+To trigger the bug, I ran "bash test.sh".
+To fix the bug, I removed the equal sign in the last two while loops. For example, in the first while loop, "index1 <= list1.size()" became "index1 < list1.size()". 
 
 ## Part 2
 Something cool that I didn't know before was how to create and run my own webserver. I thought it was very interesting to be able to edit the path of a url and alter the text produced on my screen.  I also did not know how to compile and run java files. Being able to put these commands into a bash file made it easier and efficient, which I found very interesting as well.  
