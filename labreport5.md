@@ -3,18 +3,18 @@
 ### Student Post
 ![one](lr5.1.png)
 ![two](lr5.2.png)
-I'm having trouble debugging ListExamples.java. My test cases keep failing because of an out of bounds error and I'm not sure why, but I think it might be because my while loop should check for when the index is less than the length of the list - 1.
+I'm having trouble debugging ListExamples.java. My test cases keep failing because of an out of bounds error and I'm not sure why, but I think it might be because my while loop's condition should while the index is less than the length of the list - 1 instead of just length.
 
 ### TA Response
-Hi! Since the error produced is caused by an index out of bounds, the count of your index is incrementing too high. At the bottom of your code, there are two while loops that iterate while the index is less than or equal to the length of the list. Removing the equal sign should fix this.
+Hi! Since the error produced is caused by an index out of bounds, the count of your index is incrementing too high. At the bottom of the code of ListExamples.java, there are two while loops that iterate while the index is less than or equal to the length of the list. Removing the equal sign should fix this from "<=" should fix this.
 
 ### After Fix
 ![three](lr5.3.png)
-By removing the equal sign, the while loops iterated one less time and the index did not go out of bounds. Thanks!
+<br>After changing the operators of both while loops to "<" instead of "<=", my test cases passed! The bug was that the index would increment one time too many and would be higher than the length of the list, which puts it out of bounds. 
 
 ### Setup
 ![four](lr5.4.png)
-The correct files and directories can all be accessed by git cloning this URL: git@github.com:AddRain1/lab7.git.
+<br>The correct files and directories can all be accessed by git cloning this URL: git@github.com:AddRain1/lab7.git.
 
 ### Content of each file before fix
 **ListExamples.java**
@@ -105,4 +105,4 @@ To trigger the bug, I ran "bash test.sh".
 To fix the bug, I removed the equal sign in the last two while loops. For example, in the first while loop, "index1 <= list1.size()" became "index1 < list1.size()". 
 
 ## Part 2
-Something cool that I didn't know before was how to create and run my own webserver. I thought it was very interesting to be able to edit the path of a url and alter the text produced on my screen.  I also did not know how to compile and run java files. Being able to put these commands into a bash file made it easier and efficient, which I found very interesting as well.  
+Something cool that I didn't know before was how to create and run a web server. I thought it was very interesting to be able to concatenate to the path of a URL and alter the text produced on my screen.  I also did not know how to compile and run Java files. Being able to put these commands into a bash file made it easier and more efficient, which I found very interesting as well.  
